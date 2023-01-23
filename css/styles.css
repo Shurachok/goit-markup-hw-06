@@ -164,6 +164,10 @@ ol {
   bottom: -28px;
 }
 
+.header-link.current{
+  color: var(--main-highlight-color);
+}
+
 .header-contact {
   font-family: inherit;
   display: flex;
