@@ -1,0 +1,164 @@
+@media screen and (min-width: 1200px) {
+  .conteiner {
+    width: 1128px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* ------------Header-------- */
+
+@media screen and (min-width: 1200px) {
+  .conteiner-header {
+    position: relative;
+    width: 1128px;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 1.5;
+    justify-content: left;
+    padding: 24px 0 0;
+  }
+
+  .header-td-navigation {
+    margin-left: 76px;
+  }
+
+  .header-td-contact {
+    flex-direction: row;
+    gap: 40px;
+    position: absolute;
+    right: 0;
+  }
+}
+
+/*-------Main information and service order-------- */
+@media screen and (min-width: 1200px) {
+  .order-bg {
+    max-width: 1440px;
+    width: 100%;
+    padding: 188px 0;
+  }
+
+  .order-btn {
+    margin-top: 48px;
+  }
+}
+
+/* ---------modal window ---------- */
+
+/* --------Soft Skils---------- */
+@media screen and (min-width: 1200px) {
+  .skils {
+    padding: 120px 0;
+  }
+
+  .skils-list {
+    row-gap: 24px;
+  }
+
+  .skils-wrap {
+    width: 264px;
+    height: auto;
+  }
+
+  .skils-icon-box {
+    display: flex;
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+    background: #f4f4fd;
+    border-radius: 4px;
+    padding: 24px 100px;
+    justify-content: center;
+  }
+
+  .skils-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
+
+  .skils-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+}
+
+/* ----------------Service List----------- */
+@media screen and (min-width: 1200px) {
+  .service {
+    display: flex;
+    padding-bottom: 120px;
+  }
+
+  .servise-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11x;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--main-title-color);
+    margin-bottom: 72px;
+  }
+
+  .service-list-conteiner {
+    display: flex;
+  }
+
+  .service-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+  .service-item {
+    flex-basis: calc((100% - 48px) / 3);
+  }
+}
+
+/* ---------------Team----------- */
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+/* -----------------Customers section----------------- */
+@media screen and (min-width: 1200px) {
+  .customers-item {
+    width: calc((100% - 120px) / 6);
+  }
+}
+
+/* ----------- Footer ------------- */
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding: 100px 0;
+    min-height: auto;
+  }
+
+  .footer > .conteiner {
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+
+  .footer-box {
+    margin-left: 0;
+  }
+
+  .footer-social {
+    margin-left: 120px;
+  }
+
+  .footer-subscribe {
+    margin-top: 0;
+    margin-left: 80px;
+    width: 453px;
+  }
+}

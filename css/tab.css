@@ -1,0 +1,216 @@
+@media screen and (min-width: 768px) {
+  .conteiner {
+    width: 768px;
+  }
+}
+
+/* ------------Header-------- */
+@media screen and (min-width: 768px) {
+  .conteiner-header {
+    width: 768px;
+    padding: 24px 16px 0;
+  }
+  .conteiner-menu-open {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+
+  .header-td-navigation {
+    display: flex;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .header-list {
+    flex-direction: row;
+    font-weight: 500;
+    font-size: 16px;
+    justify-content: center;
+  }
+
+  .header-link {
+    position: relative;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--main-title-color);
+  }
+
+  .header-link.current::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-color: var(--main-highlight-color);
+    height: 4px;
+    border-radius: 2px;
+    justify-items: center;
+    left: 0;
+    bottom: -26px;
+  }
+
+  .header-td-contact {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    gap: 4px;
+  }
+
+  .header-item-contact {
+    height: min-content;
+    width: auto;
+  }
+
+  .header-mail {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    color: #434455;
+  }
+
+  .header-tel {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    color: #434455;
+    text-transform: uppercase;
+  }
+}
+
+/*-------Main information and service order-------- */
+
+@media screen and (min-width: 768px) {
+  .order-bg {
+    width: 768px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../img/bg-td.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .order-bg {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../img/bg-td@2x.jpg);
+    }
+  }
+  .order-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+  }
+  .order-btn {
+    margin-top: 40px;
+  }
+}
+
+/* ---------modal window ---------- */
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 408px;
+  }
+  .private-policy-text,
+  .modal-link-text {
+    font-size: 12px;
+  }
+}
+
+/* --------Soft Skils---------- */
+@media screen and (min-width: 768px) {
+  .skils-list {
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .skils-wrap {
+    width: 356px;
+  }
+}
+
+/* -------team card----------- */
+@media screen and (min-width: 768px) {
+  .team-list {
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+}
+
+/* ---------Customers section--------- */
+
+@media screen and (min-width: 768px) {
+  .customers-list {
+    column-gap: 24px;
+  }
+}
+
+/* --------------- Footer -------------------- */
+@media screen and (min-width: 768px) {
+  .footer > .conteiner {
+    justify-content: left;
+  }
+  .footer-box {
+    margin-left: 108px;
+  }
+
+  .footer-social {
+    width: 208px;
+    margin-top: 0;
+    margin-left: 24px;
+  }
+
+  .footer-subscribe {
+    margin-left: 108px;
+    width: 100%;
+  }
+
+  .footer-title {
+    text-align: left;
+  }
+
+  .subcribe-form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 453px;
+    justify-content: left;
+  }
+
+  .footer-input {
+    width: 264px;
+  }
+
+  .footer-btn-subscribe {
+    margin-top: 0;
+    margin-left: 24px;
+  }
+}
+
+/* ---------Modal Window------ */
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 408px;
+  }
+
+  .modal-form {
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .modal-item {
+    width: 100%;
+  }
+
+  .textarea-label {
+    width: 100%;
+  }
+}

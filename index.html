@@ -15,24 +15,28 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mob.css" />
+    <link rel="stylesheet" href="./css/tab.css" />
+    <link rel="stylesheet" href="./css/descktop.css" />
   </head>
   <body>
-    <!--Top line-->
+    <!--------------Header-------------->
     <header class="header">
-      <div class="conteiner-header conteiner">
+      <div class="conteiner-header">
         <div class="conteiner-logo">
           <a class="logo link" href="./index.html"
             ><span class="logo-color">WEB</span>STUDIO</a
           >
         </div>
-        <nav class="header-navigation">
+        <!--------------tab and descktope navigation,contact list --------->
+        <nav class="header-td-navigation">
           <ul class="header-list list">
             <li class="header-item">
               <a class="header-link current" href="./index.html">Studio</a>
@@ -45,7 +49,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="header-contact list">
+        <ul class="header-td-contact list">
           <li class="header-item-contact">
             <a class="header-mail link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
@@ -57,19 +61,110 @@
             >
           </li>
         </ul>
+        <!-----------mob menu ---------->
+        <div class="conteiner-menu-open">
+          <button
+            type="button"
+            class="btn-menu-open js-open-menu"
+            aria-controls="mobile-menu"
+          >
+            <svg class="hamburger" width="32px" height="22px">
+              <use href="./img/icon.svg#icon-open-menu"></use>
+            </svg>
+          </button>
+        </div>
       </div>
+      <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <button type="button" class="menu-close js-close-menu">
+          <span>
+            <svg class="closeX" width="8px" height="8px">
+              <use href="./img/icon.svg#icon-CloseX"></use>
+            </svg>
+          </span>
+        </button>
+        <nav class="header-navigation">
+          <ul class="header-list list">
+            <li class="header-item">
+              <a class="header-link" href="./index.html">Studio</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link current" href="./index.html">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-contact list">
+          <li class="header-item-contact">
+            <a class="header-tel link" href="tel:+11(000)1111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="header-item-contact">
+            <a class="header-mail link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mob-list-social list">
+          <li class="mob-item-social">
+            <a href="" class="link social-link">
+              <svg class="mob-social-icon" width="16px" height="16px">
+                <use href="./img/icon.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-item-social">
+            <a href="" class="link social-link">
+              <svg class="mob-social-icon" width="16px" height="16px">
+                <use href="./img/icon.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-item-social">
+            <a href="" class="link social-link">
+              <svg class="mob-social-icon" width="16px" height="16px">
+                <use href="./img/icon.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-item-social">
+            <a href="" class="link social-link">
+              <svg class="mob-social-icon" width="16px" height="16px">
+                <use href="./img/icon.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"
+      ></script>
+      <script defer src="js/mobile-menu.js"></script>
     </header>
     <main>
-      <!--Main information and service order-->
+      <!-------Main information and service order-------->
       <section class="order">
         <div class="order-bg">
-          <h1 class="order-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="order-btn" data-modal-open>
+          <h1
+            class="order-title animate__animated animate__heartBeat animate__delay-2s animate__repeat-2"
+          >
+            Effective Solutions For Your Business
+          </h1>
+          <button
+            type="button"
+            class="order-btn animate__animated animate__heartBeat animate__delay-2s animate__repeat-2"
+            data-modal-open
+          >
             Order Service
           </button>
         </div>
       </section>
-      <!--Soft skils-->
+      <!-----------Soft skils------------->
       <section class="skils">
         <div class="conteiner">
           <ul class="skils-list list">
@@ -132,7 +227,7 @@
           </ul>
         </div>
       </section>
-      <!--Service list-->
+      <!-------------Service list------------->
       <section class="service">
         <div class="conteiner">
           <h2 class="servise-title">What are we doing</h2>
@@ -140,7 +235,8 @@
             <ul class="service-list list">
               <li class="service-item">
                 <img
-                  src="./img/computer-sq.jpg"
+                  src="./img/descktop.jpg"
+                  srcset="./img/descktop.jpg 1x, ./img/descktop@2x.jpg 2x"
                   alt="Computer Aplication"
                   width="360"
                   height="300"
@@ -148,7 +244,8 @@
               </li>
               <li class="service-item">
                 <img
-                  src="./img/mobaplic-sq.jpg"
+                  src="./img/mob.jpg"
+                  srcset="./img/mob.jpg 1x, ./img/mob@2x.jpg 2x"
                   alt="Mobile Aplication"
                   width="360"
                   height="300"
@@ -156,7 +253,8 @@
               </li>
               <li class="service-item">
                 <img
-                  src="./img/loptopmob-sq.jpg"
+                  src="./img/laptop.jpg"
+                  srcset="./img/laptop.jpg 1x, ./img/laptop@2x.jpg 2x"
                   alt="Laptop and Mobile"
                   width="360"
                   height="300"
@@ -166,14 +264,15 @@
           </div>
         </div>
       </section>
-      <!--Team card-->
+      <!----------Team card------------->
       <section class="team">
         <div class="conteiner">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list list">
             <li class="team-item">
               <img
-                src="./img/mark-sq.jpg"
+                src="./img/mark.jpg"
+                srcset="./img/mark.jpg 1x, ./img/mark@2x.jpg 2x"
                 alt="Mark"
                 width="264"
                 height="260"
@@ -214,7 +313,13 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./img/tom-sq.jpg" alt="Tom" width="264" height="260" />
+              <img
+                src="./img/tom.jpg"
+                srcset="./img/tom.jpg 1x, ./img/tom@2x.jpg 2x"
+                alt="Tom"
+                width="264"
+                height="260"
+              />
               <div class="conteiner-hero">
                 <h3 class="team-name">Tom Ford</h3>
                 <p class="team-position">Frontend Developer</p>
@@ -252,7 +357,8 @@
             </li>
             <li class="team-item">
               <img
-                src="./img/camila-sq2.jpg"
+                src="./img/camila.jpg"
+                srcset="./img/camila.jpg 1x, ./img/camila@2x.jpg 2x"
                 alt="Camila"
                 width="264"
                 height="260"
@@ -294,7 +400,8 @@
             </li>
             <li class="team-item">
               <img
-                src="./img/daniel-sq2.jpg"
+                src="./img/daniel.jpg"
+                srcset="./img/daniel.jpg 1x, ./img/daniel@2x.jpg 2x"
                 alt="Daniel"
                 width="264"
                 height="260"
@@ -436,10 +543,25 @@
         <div class="footer-subscribe">
           <h3 class="footer-title">Subscribe</h3>
           <form class="subcribe-form">
-            <input type="email" name="subscriber-email" placeholder="E-mail" class="footer-input" autocomplete="email" required>
-            <button type="submit" class="footer-btn-subscribe"><span class="footer-btn-text">Subscribe<svg width="24px" height="20px" class="footer-icon-send">
-              <use href="./img/icon.svg#icon-send"></use>
-            </svg> </span> </button>
+            <input
+              type="email"
+              name="subscriber-email"
+              placeholder="E-mail"
+              class="footer-input"
+              autocomplete="email"
+              required
+            />
+            <button type="submit" class="footer-btn-subscribe">
+              <span class="footer-btn-text"
+                >Subscribe<svg
+                  width="24px"
+                  height="20px"
+                  class="footer-icon-send"
+                >
+                  <use href="./img/icon.svg#icon-send"></use>
+                </svg>
+              </span>
+            </button>
           </form>
         </div>
       </div>
@@ -504,7 +626,7 @@
                 <use href="./img/icon.svg#icon-email"></use>
               </svg> </span
           ></label>
-          <label class=".textarea-label">
+          <label class="textarea-label">
             <span class="modal-above-text">Comment</span>
             <textarea
               name="client-comment"
@@ -522,10 +644,11 @@
               class="input-checked visualy-hidden"
             />
             <label for="privacy" class="private-policy-text">
-              I accept the terms and conditions of the <a href="" class="link">
-                  <span class="modal-link-text">Privacy Policy</span>
-                </a>
-              </label>
+              I accept the terms and conditions of the
+              <a href="" class="link">
+                <span class="modal-link-text">Privacy Policy</span>
+              </a>
+            </label>
           </div>
           <button type="submit" class="modal-btn-send">Send</button>
         </form>

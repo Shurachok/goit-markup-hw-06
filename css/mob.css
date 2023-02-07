@@ -1,0 +1,45 @@
+@media screen and (min-width: 480px) {
+  .conteiner {
+    width: 428px;
+  }
+}
+
+/* -------------Top line-------------- */
+
+@media screen and (min-width: 480px) {
+  .conteiner-header {
+    width: 428px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*-------Main information and service order-------- */
+
+@media screen and (min-width: 480px) {
+  .order-bg {
+    width: 428px;
+  }
+}
+
+/* ---------Customers section--------- */
+
+@media screen and (min-width: 480px) {
+  .customers-list {
+    row-gap: 72px;
+  }
+}
+
+/* ------------ Footer -------------------- */
+
+@media screen and (min-width: 480px) {
+  .footer-text {
+    width: 268px;
+    height: auto;
+  }
+
+  .footer-subscribe {
+    width: 396px;
+  }
+
+}
