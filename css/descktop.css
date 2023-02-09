@@ -1,23 +1,26 @@
 @media screen and (min-width: 1200px) {
   .conteiner {
-    width: 1128px;
-    padding-left: 0;
-    padding-right: 0;
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
 /* ------------Header-------- */
 
 @media screen and (min-width: 1200px) {
+.header{
+  padding-bottom: 28px;
+}
+
   .conteiner-header {
     position: relative;
-    width: 1128px;
+    width: 1158px;
     margin-right: auto;
     margin-left: auto;
     line-height: 1.5;
     justify-content: left;
-    padding: 24px 0 0;
-  }
+    }
 
   .header-td-navigation {
     margin-left: 76px;
@@ -29,6 +32,11 @@
     position: absolute;
     right: 0;
   }
+
+.header-mail:hover,
+.header-mail:focus {
+  color: var(--main-highlight-color);
+}
 }
 
 /*-------Main information and service order-------- */
@@ -37,8 +45,24 @@
     max-width: 1440px;
     width: 100%;
     padding: 188px 0;
+     background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../img/bg-desktop.jpg);
   }
-
+ @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .order-bg {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../img/bg-desktop@2x.jpg);
+    }
+  }
   .order-btn {
     margin-top: 48px;
   }

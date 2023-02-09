@@ -2,6 +2,39 @@
   .conteiner {
     width: 428px;
   }
+
+  .header{
+    padding: 24px 16px;
+  }
+
+  .conteiner-header{
+    padding: 0;
+    height: auto;
+  }
+}
+
+/* ---------mob menu----- */
+@media screen and (min-width: 480px) {
+
+  .header-list{
+    gap: 40px;
+  }
+  .header-link{
+    font-size: 36px;
+  }
+  .header-contact{
+    margin-top: 284px;
+    gap:40px;
+  }
+  .header-tel{
+    font-size: 36px;
+  }
+  .mob-list-social{
+    width: 328px;
+    margin-top: 48px;
+    margin-right: 60px;
+    gap:56px;
+  }
 }
 
 /* -------------Top line-------------- */
